@@ -1,0 +1,46 @@
+{
+  "name": "@comparaonline/backoff",
+  "version": "1.0.0",
+  "description": "Simple method to retry and backoff an observable with errors",
+  "repository": "comparaonline/backoff",
+  "author": {
+    "name": "Ezequiel Rabinovich",
+    "email": "erabinovich@comparaonline.com"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "pretest": "yarn tslint",
+    "compile": "tsc",
+    "prepublishOnly": "yarn compile",
+    "clean": "rm -rf build/*",
+    "test": "jest",
+    "test:fast": "jest",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [
+    "comparaonline"
+  ],
+  "peerDependencies": {
+    "rxjs": "~6"
+  },
+  "devDependencies": {
+    "rxjs": "~6",
+    "@types/jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.6.4"
+  }
+}
