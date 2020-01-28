@@ -4,7 +4,7 @@ Simple backoff method to retry failed observables.
 
 It takes two arguments, `maxTries` and `ms`, the amount of attempts and the number of
 milliseconds that will be waited after the first failure. Any successive attempts
-the method will backoff for the specified `ms` times the next power of 2
+the method will backoff for the specified `ms` times increasing exponentially
 
 ## Usage:
 ```ts
